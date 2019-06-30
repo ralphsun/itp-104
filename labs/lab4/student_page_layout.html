@@ -11,6 +11,18 @@
                 height: 200px;
                 width: auto;
             }
+            .wrapper {
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .col {
+                width: 450px;
+                float: left;
+            }
+            .clearfloat {
+                clear: both;
+            }
         </style>
     </head>
     <body>
@@ -39,19 +51,27 @@
             <li>PHED 155A:  Golf</li>
             <li>PHED 156A:  Basketball</li>
         </ul>
-        <p>
-            Assignments:
-        </p>
-        <ul>
-            <li><a href="../../assignments/assignment1/web_resume.html">Assignment 1:  Web Resume</a></li>
-            <li><a href="../../assignments/assignment2/interest_page.html">Assignment 2:  Interest Page</a></li>
-        </ul>
-        <p>
-            Labs:
-        </p>
-        <ul>
-            <li><a href="../lab2/student_page.html">Lab 2:  Student Page</a></li>
-            <li><a href="../lab3/updated_web_resume.html">Lab 3:  Updated Resume</a></li>
-        </ul>
+        <div class="wrapper">
+            <div class="column">
+                <p>
+                    Assignments:
+                </p>
+                <ul>
+                    <li><a href="../../assignments/assignment1/web_resume.html">Assignment 1:  Web Resume</a></li>
+                    <li><a href="../../assignments/assignment2/interest_page.html">Assignment 2:  Interest Page</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <p>
+                    Labs:
+                </p>
+                <ul>
+                    <li><a href="../lab2/student_page.html">Lab 2:  Student Page</a></li>
+                    <li><a href="../lab3/updated_web_resume.html">Lab 3:  Updated Resume</a></li>
+                    <li><a href="student_page_layout.html">Lab 4:  Updated Student Page</a></li>
+                </ul>
+            </div>
+            <div class="clearfloat"></div>
+        </div>  
     </body>
 </html>
