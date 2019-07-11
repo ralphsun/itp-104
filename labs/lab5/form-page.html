@@ -5,15 +5,34 @@
     </head>
     <body>
         <div>
+            <h1>Daffy Duck for President!</h1>
             <form action="confirmation.html">
-                <label for="name">Name:</label>
+                <label for="name">Name</label>
                 <input type="text" id="name">
 
-                <label for="email">Email:</label>
+                <label for="email">Email</label>
                 <input type="text" id="email">
 
-                <label for="text-area">Message:</label>
-                <textarea id="text-area"></textarea>
+                <label>Will you contribute?</label>
+                <label>
+                    <input type="radio" name="option">
+                    Yes!
+                </label>
+                <label>
+                    <input type="radio" name="option">
+                    No, I'm just going to sit back and watch Bugs win.
+                </label>
+
+                <label for="dropdown">Contribution Amount</label>
+                <select id="dropdown">
+                    <option>$5</option>
+                    <option>$10</option>
+                    <option>$25</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="text-area">Message</label>
+                <textarea id="text-area" placeholder="Send a message to Daffy's team"></textarea>
 
                 <label>
                     <input type="checkbox">
