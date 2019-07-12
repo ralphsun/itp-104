@@ -1,44 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title>Ralph Sun | Form Page</title>
+        <style>
+            .form-row {
+                margin: 10px 0px;
+            }
+        </style>
     </head>
     <body>
         <div>
             <h1>Daffy Duck for President!</h1>
             <form action="confirmation.html">
-                <label for="name">Name</label>
-                <input type="text" id="name">
-
-                <label for="email">Email</label>
-                <input type="text" id="email">
-
-                <label>Will you contribute?</label>
-                <label>
-                    <input type="radio" name="option">
-                    Yes!
-                </label>
-                <label>
-                    <input type="radio" name="option">
-                    No, I'm just going to sit back and watch Bugs win.
-                </label>
-
-                <label for="dropdown">Contribution Amount</label>
-                <select id="dropdown">
-                    <option>$5</option>
-                    <option>$10</option>
-                    <option>$25</option>
-                    <option>Other</option>
-                </select>
-
-                <label for="text-area">Message</label>
-                <textarea id="text-area" placeholder="Send a message to Daffy's team"></textarea>
-
-                <label>
-                    <input type="checkbox">
-                    I accept the Terms & Conditions.
-                </label>
-
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="form-row">
+                    <label>Communications Opt-In</label>
+                    <label>
+                        <input type="checkbox" name="choice">
+                        Campaign Email Updates
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choice">
+                        Rabbit Season Newsletter
+                    </label>
+                    <label>
+                        <input type="checkbox" name="choice">
+                        Join Team Daffy!
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>Will you contribute?</label>
+                    <label>
+                        <input type="radio" name="option">
+                        Yes!
+                    </label>
+                    <label>
+                        <input type="radio" name="option">
+                        No, but I would like to help in other ways.
+                    </label>
+                    <label>
+                        <input type="radio" name="option">
+                        No, I'm just going to sit back and watch Bugs win.
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="dropdown">Contribution Amount</label>
+                    <select id="dropdown">
+                        <option>$5</option>
+                        <option>$10</option>
+                        <option>$25</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="text-area">Message</label>
+                    <textarea id="text-area" placeholder="Send a message to Daffy's team"></textarea>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <input type="checkbox">
+                        I accept the Terms & Conditions.
+                    </label>
+                </div>
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
             </form>
